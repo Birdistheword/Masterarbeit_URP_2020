@@ -867,6 +867,11 @@ PrefabInstance:
       propertyPath: Stationary
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3046636893941470481, guid: a95b78e338a5e794992bf3ebeb6ed24a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4461283233140864868, guid: a95b78e338a5e794992bf3ebeb6ed24a,
         type: 3}
       propertyPath: m_RootOrder
