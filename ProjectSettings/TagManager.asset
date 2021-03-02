@@ -12,6 +12,8 @@ TagManager:
   - Square
   - FillableCollider
   - FillObject
+  - HurtObject
+  - PleasureObject
   layers:
   - Default
   - TransparentFX

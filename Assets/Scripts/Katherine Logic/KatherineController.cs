@@ -6,20 +6,13 @@ public class KatherineController : MonoBehaviour
 {
     [SerializeField] Animator anim;
 
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+  
+    // Little Fix to reset the speed, not worth it to find a more elegant solution
     public void ResetSpeed()
     {
         anim.SetFloat("hit_intensity", 0);
+        anim.SetFloat("stroke_intensity", 0);
+        anim.SetFloat("face_stroke_intensity", 0);
+        anim.SetFloat("face_hit_intensity", 0);
     }
 }

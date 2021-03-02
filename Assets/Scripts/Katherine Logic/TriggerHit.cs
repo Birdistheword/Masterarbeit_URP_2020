@@ -6,7 +6,9 @@ public class TriggerHit : MonoBehaviour
 {
     [SerializeField] Animator anim;
     [SerializeField] AudioSource audio;
-    [SerializeField] string hitText;
+    [SerializeField] string hitText, pleasureText;
+    [SerializeField] float speedThreshold;
+
 
     private float speedOfHittingObj;
 
@@ -15,15 +17,21 @@ public class TriggerHit : MonoBehaviour
     private void OnTriggerEnter(Collider obj)
     {
         
-        if (obj.GetComponent<Rigidbody>() != null)
+        if (obj.tag.Equals("HurtObject"))
         {
-            Debug.Log("I got hit in " + hitText);
             speedOfHittingObj = obj.GetComponent<Rigidbody>().velocity.magnitude;
-            Debug.Log("speed was: " + speedOfHittingObj);
+            anim.SetFloat(hitText, speedOfHittingObj);
+            if(speedOfHittingObj >= speedThreshold)
+            {
+                audio.Play();
+            }
+           
+        }
 
-            anim.SetFloat("hit_intensity", speedOfHittingObj);
-
-            audio.Play();
+        else if (obj.tag.Equals("PleasureObject"))
+        {
+            speedOfHittingObj = obj.GetComponent<Rigidbody>().velocity.magnitude;
+            anim.SetFloat(pleasureText, speedOfHittingObj);
         }
     }
 
