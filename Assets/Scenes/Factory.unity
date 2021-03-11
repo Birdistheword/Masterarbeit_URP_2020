@@ -237,6 +237,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0d6282ec49c88ba4e84b56f96e84bc76, type: 2}
+    - target: {fileID: 6245742781062551247, guid: e698883961356fd4c82a3af1705b8e69,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7472710086860379819, guid: e698883961356fd4c82a3af1705b8e69,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -559,6 +564,11 @@ PrefabInstance:
     - target: {fileID: 1657702203541552194, guid: 51137f92af2f945489c3f934704a6bf6,
         type: 3}
       propertyPath: jointOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657702203541552196, guid: 51137f92af2f945489c3f934704a6bf6,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1657702203571378246, guid: 51137f92af2f945489c3f934704a6bf6,
@@ -5007,6 +5017,11 @@ PrefabInstance:
       propertyPath: CameraYOffset
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 4725586098401745757, guid: b92179b15ed1b304dae7168d2af5fcad,
+        type: 3}
+      propertyPath: TrackingSpace
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4822077915068834167, guid: b92179b15ed1b304dae7168d2af5fcad,
         type: 3}
       propertyPath: m_RootOrder
@@ -5025,7 +5040,7 @@ PrefabInstance:
     - target: {fileID: 4822077915068834167, guid: b92179b15ed1b304dae7168d2af5fcad,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.217
+      value: 2.615
       objectReference: {fileID: 0}
     - target: {fileID: 4822077915068834167, guid: b92179b15ed1b304dae7168d2af5fcad,
         type: 3}
